@@ -51,7 +51,7 @@ DROP_COLUMNS = ["Order", "PID"]
 @st.cache_resource
 def run_full_pipeline_and_cache():
     try:
-        df = pd.read_csv('../data/AmesHousing.csv.xls')
+        df = pd.read_csv('AmesHousing.csv.xls')
     except FileNotFoundError:
         return None
 
@@ -127,7 +127,7 @@ def run_full_pipeline_and_cache():
 pipeline_assets = run_full_pipeline_and_cache()
 
 if pipeline_assets is None:
-    st.error("🚨 '../data/AmesHousing.csv.xls' not found. Verify data placement and path specification.")
+    st.error("🚨 'AmesHousing.csv.xls' not found. Verify data placement and path specification.")
     st.stop()
 
 st.title("🏢 Real Estate Valuation Core")
