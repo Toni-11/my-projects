@@ -14,7 +14,7 @@ It covers everything from raw data cleaning to model comparison and an interacti
 
 ## 🚀 Live Demo
 
-> Run the app locally with:
+> 🌐 Live Demo: https://my-projects-ames-housing.streamlit.app/
 ```bash
 streamlit run app.py
 ```
