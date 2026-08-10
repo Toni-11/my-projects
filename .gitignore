@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.env
+venv/
+*.joblib
+*.pkl
+.ipynb_checkpoints/
